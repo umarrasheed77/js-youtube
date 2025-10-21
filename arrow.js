@@ -33,3 +33,6 @@ console.log(addtwo(3,4))
 
 const addthree= (num1,num2,num3)=> (num1+num2+num3)
 console.log(addthree(1,2,3))
+
+
+//iife immediately invoked function expression to immediatelt call and to remve pollution caused bt global scope
