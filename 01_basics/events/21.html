@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <h1>nimbu pani</h1>
+    <button id="stop">chup hoja</button>
+    
+</body>
+<script>
+    setTimeout( function(){
+        console.log("Umar acha hai");
+    }, 2000 )
+    // setInterval(function(){
+    //     console.log("bakchodi")
+    // }, 2000)
+    const changeh1= function(){
+    document.querySelector('h1').innerHTML= "best hai umar"
+
+    }
+    const changeme=setTimeout(changeh1,2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme)
+    console.log("stop")
+    })
+</script>
+</html>
